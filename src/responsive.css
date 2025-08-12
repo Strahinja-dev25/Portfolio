@@ -1,0 +1,60 @@
+/* =================================================== */
+/* === 12. RESPONZIVNOST (MEDIA QUERIES) ============= */
+/* =================================================== */
+
+/* --- TABLET VERZIJA (do 1024px) --- */
+@media (max-width: 1024px) {
+  /* Smanjujemo paddinge za sve sekcije */
+  .about-section, .projects-section, .achievements-section, 
+  .philosophy-section, .contact-section {
+    padding: 4rem 2rem;
+  }
+  
+  /* Prikazujemo elemente jedan ispod drugog */
+  .about-content, .philosophy-cards-container, .form-group {
+    flex-direction: column;
+  }
+
+  /* Projects grid prebacujemo na 2 kolone */
+  .projects-grid, .modal-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Timeline centriramo */
+  .timeline-container::after { left: 20px; }
+  .timeline-item, .timeline-item:nth-child(even) { width: 100%; left: 0; padding-left: 70px; padding-right: 20px; }
+  .timeline-item::after, .timeline-item:nth-child(even)::after { left: 8px; }
+  .timeline-item:nth-child(odd) .timeline-content { text-align: left; }
+}
+
+
+
+
+
+
+/* --- MOBILNI TELEFON VERZIJA (do 768px) --- */
+@media (max-width: 768px) {
+  /* Smanjujemo osnovni font da stane više teksta */
+  body { font-size: 14px; }
+
+  /* Smanjujemo naslove */
+  .hero-title { font-size: 2.8rem; }
+  .section-title { font-size: 2.2rem; }
+  
+  /* Sakrivamo navigaciju i spremamo mesto za "hamburger" meni */
+  .main-nav { display: none; }
+  .main-header { padding: 1rem; }
+  
+  /* Projects i modal grid prebacujemo na 1 kolonu */
+  .projects-grid, .modal-projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer { font-size: 0.8rem; }
+}
+
