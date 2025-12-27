@@ -1,4 +1,3 @@
-// src/formValidator.js
 
 export const validateForm = (formData) => {
   // Provera da li su polja prazna

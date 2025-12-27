@@ -1,4 +1,3 @@
-// src/icons/LinkedInIcon.jsx
 
 function LinkedInIcon() {
   return (

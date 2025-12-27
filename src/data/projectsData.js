@@ -1,4 +1,3 @@
-// src/projectsData.js
 
 // Kasnije ćete ovde dodavati sve vaše prave projekte
 export const allProjects = [

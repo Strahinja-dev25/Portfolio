@@ -1,4 +1,3 @@
-// src/icons/GitHubIcon.jsx
 
 function GitHubIcon() {
   return (

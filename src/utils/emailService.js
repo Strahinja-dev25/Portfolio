@@ -1,4 +1,3 @@
-// src/emailService.js
 import emailjs from '@emailjs/browser';
 
 const SERVICE_ID = "gmail_service"; // Nađite ga u EmailJS -> Email Services

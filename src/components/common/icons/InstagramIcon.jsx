@@ -1,4 +1,3 @@
-// src/icons/InstagramIcon.jsx
 
 function InstagramIcon() {
   return (

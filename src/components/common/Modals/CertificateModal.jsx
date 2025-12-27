@@ -1,7 +1,6 @@
-// src/CertificateModal.jsx
 
 function CertificateModal({ imageUrl, onClose }) {
-  if (!imageUrl) return null; // Ako nema slike, nemoj ništa prikazivati
+  if (!imageUrl) return null;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
