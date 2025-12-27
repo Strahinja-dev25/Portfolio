@@ -15,8 +15,8 @@ function HeroSection () {
 
           <div className="hero-links">
             <a href="https://github.com/Strahinja-dev25" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><GitHubIcon /></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><LinkedInIcon /></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><InstagramIcon /></a>
+            <a href="https://www.linkedin.com/in/strahinja-kovacevic-81140b399" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><LinkedInIcon /></a>
+            <a href="https://www.instagram.com/strahinja___k/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><InstagramIcon /></a>
           </div>
         </section>
     );

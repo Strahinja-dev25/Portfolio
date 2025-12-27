@@ -190,7 +190,7 @@ body {
 
 /* === ABOUT ME SECTION === */
 .about-section {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto; /* Centriramo sekciju na stranici */
 }
 
@@ -241,16 +241,18 @@ body {
 
 /* ===== DESNI BLOK ===== */
 .about-right {
-  flex: 1; /* Zauzima drugu polovinu prostora */
+  flex: 1;
 }
 
 .skills-title {
   font-size: 1.5rem;
   color: var(--boja-teksta);
-  margin-top: 0;
-  margin-bottom: 1.5rem;
   border-left: 3px solid var(--boja-akcenta-1);
   padding-left: 1rem;
+}
+
+.bottom-skills-title {
+  margin-top: 3rem;
 }
 
 .skill-box {
@@ -288,7 +290,7 @@ body {
     border-radius: 4px;
 }
 
-/* Kontejner za opis - ključni deo animacije */
+/* Kontejner za opis - animacija */
 .skill-description-box {
     max-height: 0;
     overflow: hidden;
@@ -304,16 +306,15 @@ body {
     padding-left: 1rem;
 }
 
-/* Kada pređemo mišem preko .skill-box... */
+/* Pokretanje animacije */
 .skill-box:hover .skill-description-box {
     max-height: 100px; /* Dajemo mu maksimalnu visinu da se proširi */
     padding-top: 1rem;
     transition: max-height 0.5s ease-in, padding-top 0.5s ease-in 0.1s;
 }
 
-/* Stilovi za principe ostaju skoro isti */
 .principles-container {
-  margin-top: 3rem; /* Dodajemo malo razmaka iznad */
+  margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
