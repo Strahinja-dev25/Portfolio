@@ -4,12 +4,11 @@ html {
 }
 
 :root {
-  /* Definišemo naše boje kao varijable, za lakše menjanje kasnije */
-  --boja-pozadine: #0B1120; /* Još tamnija plava */
+  --boja-pozadine: #0B1120;
   --boja-pozadine-svetla: #0F172A;
-  --boja-teksta: #cdd6f4;    /* Svetlo plavo-siva */
+  --boja-teksta: #cdd6f4;
   --boja-akcenta-1: #2DD4BF;
-  --boja-akcenta-2: #63b3ed; /* Svetlo plava */
+  --boja-akcenta-2: #63b3ed;
   --boja-siva: #a0aec0;
 }
 
@@ -720,70 +719,6 @@ body {
 }
 
 
-
-
-/* === MODAL STYLES === */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(11, 17, 32, 0.8); /* Poluprovidna pozadina */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-.modal-content {
-  background-color: #1E293B;
-  padding: 2rem;
-  border-radius: 10px;
-  border: 1px solid #334155;
-  width: 80%;
-  max-width: 1000px;
-  position: relative;
-  animation: modal-fade-in 0.4s ease;
-}
-
-@keyframes modal-fade-in {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-.modal-content h2 {
-    margin-top: 0;
-    font-size: 2rem;
-    color: var(--boja-akcenta-1);
-}
-
-.close-button {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  background: none;
-  border: none;
-  color: var(--boja-siva);
-  font-size: 2rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.close-button:hover {
-    color: var(--boja-teksta);
-}
-
-.modal-projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-
-
-
 /* === STILIZOVANJE SCROLLBAR-A (Chrome, Safari, Edge) === */
 ::-webkit-scrollbar {
   width: 15px; /* Širina scrollbar-a */
@@ -825,42 +760,4 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-
-
-
-/* === STILOVI ZA MODAL SERTIFIKATA === */
-.view-certificate-btn {
-  flex: 1;
-  text-align: center;
-  padding: 0.7rem 0.8rem;
-  border: 1px solid var(--boja-akcenta-1);
-  border-radius: 5px;
-  text-decoration: none;
-  color: var(--boja-akcenta-1);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  margin-top: 10px;
-  background: #1E293B;
-}
-
-.view-certificate-btn:hover {
-  background-color: var(--boja-akcenta-1);
-  color: var(--boja-pozadine);
-}
-
-.certificate-modal-content {
-  position: relative;
-  background-color: var(--boja-pozadine);
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 80vw;
-  max-height: 80vh;
-}
-
-.certificate-modal-content img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Osigurava da se cela slika vidi */
 }

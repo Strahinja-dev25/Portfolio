@@ -1,12 +1,14 @@
 import { useState } from 'react';
-import { allProjects } from '../../data/projectsData.js';
+import { highProjects } from '../../data/projectsData.js';
+import { lowProjects} from '../../data/projectsData.js';
 import ProjectModal from '../common/Modals/ProjectModal.jsx';
+import ProjectCard from '../common/Cards/ProjectCard.jsx';
 
 function ProjectsSection () {
     const [modalProjects, setModalProjects] = useState([]);
 
     const openModal = (category) => {
-        const projectsToShow = allProjects.filter((project) => project.category === category);
+        const projectsToShow = lowProjects.filter((project) => project.category === category);
         setModalProjects(projectsToShow);
     };
 
@@ -19,31 +21,10 @@ function ProjectsSection () {
           <h2 className="section-title">My Projects</h2>
           
           <div className="projects-grid">
-            
-            {/* PRIMER KARTICE PROJEKTA (kasnije će se dodati još 5) */}
-            <div className="project-card">
-              <div className="project-image-placeholder"></div>
-              <div className="project-content">
-                <h3 className="project-title">Kanban Task Manager</h3>
-                <p className="project-description">
-                  A full-stack task management application inspired by Trello, with drag & drop functionality.
-                </p>
-                <div className="project-tags">
-                  <span className="tag">React</span>
-                  <span className="tag">Node.js</span>
-                  <span className="tag">MongoDB</span>
-                  <span className="tag">CSS</span>
-                </div>
-                <div className="project-links">
-                  <a href="#" className="project-link">View Code</a>
-                  <a href="#" className="project-link live-demo">Live Demo</a>
-                </div>
-              </div>
-            </div>
+            <ProjectCard project={highProjects[0]} />
+            <ProjectCard project={highProjects[1]} />
 
-            {/* Ovde će doći još 5 kartica... za sada ostavljeno prazno */}
-            {/* Primer prazne kartice da se vidi layout */}
-            <div className="project-card-empty"></div>
+            {/* Ostalo je prazno tu ce tek doci projekti kada se urade. Za sada samo template */}
             <div className="project-card-empty"></div>
             <div className="project-card-empty"></div>
             <div className="project-card-empty"></div>

@@ -1,7 +1,8 @@
 
 // Kasnije ćete ovde dodavati sve vaše prave projekte
-export const allProjects = [
+export const lowProjects = [
   {
+    id: 1,
     category: 'Easy',
     title: 'Color Palette Generator',
     description: 'A simple tool to generate and copy color palettes.',
@@ -10,6 +11,7 @@ export const allProjects = [
     liveLink: '#',
   },
   {
+    id: 2,
     category: 'Medium',
     title: 'Real-Time Markdown Editor',
     description: 'An editor that converts Markdown to HTML as you type.',
@@ -18,6 +20,7 @@ export const allProjects = [
     liveLink: '#',
   },
   {
+    id: 3,
     category: 'Hard',
     title: 'Kanban Task Manager',
     description: 'A full-stack task manager inspired by Trello.',
@@ -26,6 +29,7 @@ export const allProjects = [
     liveLink: '#',
   },
   {
+    id: 4,
     category: 'Easy',
     title: 'Simple Calculator',
     description: 'A classic calculator with basic arithmetic operations.',
@@ -34,6 +38,7 @@ export const allProjects = [
     liveLink: '#',
   },
   {
+    id: 5,
     category: 'Medium',
     title: 'Weather App',
     description: 'Fetches and displays weather data from a third-party API.',
@@ -41,4 +46,23 @@ export const allProjects = [
     codeLink: '#',
     liveLink: '#',
   },
+];
+
+export const highProjects = [
+  {
+    id: 1,
+    title: 'Kanban Task Manager',
+    description: 'A full-stack task manager inspired by Trello.',
+    tags: ['React', 'Node.js', 'MongoDB'],
+    codeLink: '#',
+    liveLink: '#',
+  },
+  {
+    id: 2,
+    title: 'Admin Panel Project',
+    description: 'A full-stack admin panel manager.',
+    tags: ['React', 'Node.js', 'MongoDB'],
+    codeLink: '#',
+    liveLink: '#',
+  }
 ];

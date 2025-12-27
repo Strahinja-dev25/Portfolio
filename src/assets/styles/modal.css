@@ -1,0 +1,103 @@
+:root {
+  --boja-pozadine: #0B1120;
+  --boja-pozadine-svetla: #0F172A;
+  --boja-teksta: #cdd6f4;
+  --boja-akcenta-1: #2DD4BF;
+  --boja-akcenta-2: #63b3ed;
+  --boja-siva: #a0aec0;
+  --boja-pozadine-modala: #0b1120cc;
+  --boja-pozadine-dugmeta-modala: #1E293B;
+}
+
+/* Vazi za sve modale */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--boja-pozadine-modala);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: var(--boja-pozadine-dugmeta-modala);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  width: 80%;
+  max-width: 1000px;
+  position: relative;
+  animation: modal-fade-in 0.4s ease;
+}
+
+@keyframes modal-fade-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: var(--boja-akcenta-1);
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--boja-pozadine);
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.close-button:hover {
+    opacity: 0.6;
+}
+
+
+/* Stilovi za modale sertifikata */
+.certificate-modal-content {
+  position: relative;
+  background-color: var(--boja-pozadine);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.certificate-modal-content img {
+    width: 1000px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.view-certificate-btn {
+  flex: 1;
+  text-align: center;
+  padding: 0.7rem 0.8rem;
+  margin-top: 10px;
+  border: 1px solid var(--boja-akcenta-1);
+  border-radius: 5px;
+  color: var(--boja-akcenta-1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: var(--boja-pozadine-dugmeta-modala);
+}
+.view-certificate-btn:hover {
+  background-color: var(--boja-akcenta-1);
+  color: var(--boja-pozadine);
+}
+
+/* Stilovi za modale projekata */
+.modal-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}

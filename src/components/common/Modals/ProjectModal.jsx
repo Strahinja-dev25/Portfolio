@@ -1,6 +1,14 @@
+import { useEffect } from 'react';
+import '../../../assets/styles/modal.css';
 
 function ProjectModal({ projects, onClose }) {
   const categoryTitle = projects[0]?.category || 'Projects';
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => document.body.style.overflow = 'auto';
+  }, []);
 
   return (
     <div className="modal-overlay" onClick={onClose}>
