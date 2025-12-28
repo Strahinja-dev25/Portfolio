@@ -1,3 +1,4 @@
+import '../../assets/styles/layout/Header.css';
 
 function Header () {
     return (

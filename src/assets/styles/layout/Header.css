@@ -1,0 +1,40 @@
+:root {
+  --boja-akcenta-1: #2DD4BF;
+  --boja-siva: #a0aec0;
+}
+
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link svg {
+  transition: transform 0.3s ease;
+}
+.logo-link:hover svg {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.main-nav a {
+  color: var(--boja-siva);
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--boja-akcenta-1);
+  text-shadow: 0 0 8px var(--boja-akcenta-1);
+}

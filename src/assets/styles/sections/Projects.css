@@ -1,0 +1,148 @@
+:root {
+  --boja-pozadine: #0B1120;
+  --boja-teksta: #cdd6f4;
+  --boja-akcenta-1: #2DD4BF;
+  --boja-akcenta-2: #63b3ed;
+  --boja-siva: #a0aec0;
+  --boja-svetlo-crna: #2d3748;
+  --boja-donjeg-dela-kartice: #1E293B;
+}
+
+.projects-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-card, .project-card-empty {
+  background-color: var(--boja-donjeg-dela-kartice);
+  border: 1px solid #334155;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--boja-akcenta-1);
+  box-shadow: 0 10px 30px -10px rgba(79, 209, 197, 0.2);
+}
+
+.project-card-empty {
+  min-height: 400px;
+  opacity: 0.2;
+}
+
+.project-image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: var(--boja-svetlo-crna);
+}
+
+.project-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin-top: 0;
+  color: var(--boja-teksta);
+}
+
+.project-description {
+  font-size: 1rem;
+  color: var(--boja-siva);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.project-tags {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: var(--boja-akcenta-2);
+  color: var(--boja-pozadine);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--boja-akcenta-1);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--boja-akcenta-1);
+  transition: all 0.3s ease;
+}
+.project-link:hover {
+  background-color: var(--boja-akcenta-1);
+  color: var(--boja-pozadine);
+}
+
+.project-link.live-demo {
+    background-color: var(--boja-akcenta-1);
+    color: var(--boja-pozadine);
+}
+.project-link.live-demo:hover {
+    background-color: transparent;
+    color: var(--boja-akcenta-1);
+}
+
+
+/* Other projects */
+.category-section {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, var(--boja-akcenta-1), var(--boja-akcenta-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.category-button {
+  background-color: var(--boja-donjeg-dela-kartice);
+  color: var(--boja-akcenta-1);
+  border: 1px solid var(--boja-akcenta-1);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.category-button:hover {
+  transform: translateY(-5px);
+  background-color: var(--boja-akcenta-1);
+  border-color: var(--boja-akcenta-1);
+  color: var(--boja-pozadine);
+}

@@ -1,3 +1,4 @@
+import '../../assets/styles/sections/About.css';
 import SkillCard from '../common/Cards/SkillCard.jsx';
 
 function AboutSection () {

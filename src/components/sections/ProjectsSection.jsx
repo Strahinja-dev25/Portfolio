@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../../assets/styles/sections/Projects.css';
 import { highProjects } from '../../data/projectsData.js';
 import { lowProjects} from '../../data/projectsData.js';
 import ProjectModal from '../common/Modals/ProjectModal.jsx';

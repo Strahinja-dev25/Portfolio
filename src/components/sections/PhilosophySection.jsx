@@ -1,3 +1,4 @@
+import '../../assets/styles/sections/Philosophy.css';
 import PhilosophyCard from '../common/Cards/PhilosophyCard.jsx';
 
 function PhilosophySection () {

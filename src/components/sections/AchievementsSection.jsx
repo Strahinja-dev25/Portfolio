@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../../assets/styles/sections/Achievements.css';
 import CertificateModal from '../common/Modals/CertificateModal.jsx';
 import { allCertificates } from '../../data/certificatesData.js';
 import AchievementCard from '../common/Cards/AchievementCard.jsx';

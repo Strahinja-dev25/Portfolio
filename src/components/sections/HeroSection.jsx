@@ -1,3 +1,4 @@
+import '../../assets/styles/sections/Hero.css';
 import GitHubIcon from '../common/icons/GitHubIcon.jsx';
 import LinkedInIcon from '../common/icons/LinkedInIcon.jsx';
 import InstagramIcon from '../common/icons/InstagramIcon.jsx';

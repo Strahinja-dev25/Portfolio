@@ -1,0 +1,88 @@
+:root {
+  --boja-pozadine: #0B1120;
+  --boja-teksta: #cdd6f4;
+  --boja-akcenta-1: #2DD4BF;
+  --boja-siva: #a0aec0;
+  --boja-donjeg-dela-kartice: #1E293B;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: var(--boja-donjeg-dela-kartice);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--boja-pozadine);
+  border: 4px solid var(--boja-akcenta-1);
+  border-radius: 50%;
+  top: 15px;
+  z-index: 1;
+}
+
+/* Neparne stavke (prva, treća...) - LEVO */
+.timeline-item:nth-child(odd) { left: 0; }
+
+.timeline-item:nth-child(odd) .timeline-content { text-align: right; }
+
+/* Krug ide na desnu stranu kontejnera */
+.timeline-item:nth-child(odd)::after { right: -12px; }
+
+/* Parne stavke (druga, četvrta...) idu DESNO */
+.timeline-item:nth-child(even) { left: 50%; }
+
+/* Krug ide na levu stranu kontejnera */
+.timeline-item:nth-child(even)::after { left: -12px; }
+
+.timeline-content {
+  padding: 1.5rem 2rem;
+  background-color: var(--boja-donjeg-dela-kartice);
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content { transform: scale(1.05); }
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: var(--boja-akcenta-1);
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.timeline-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: var(--boja-teksta);
+}
+
+.timeline-issuer {
+    margin: 0;
+    font-style: italic;
+    color: var(--boja-siva);
+}
